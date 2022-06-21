@@ -34,5 +34,4 @@ void main() {
   multi.divisibleToList();
   multi.addDivisible();
   print(multi.sumDivisible);
-  multi.setSumDivisible = multi.getSumDivisible;
 }
