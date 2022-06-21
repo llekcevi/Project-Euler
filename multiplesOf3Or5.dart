@@ -1,13 +1,6 @@
 class Multiples {
   List<int> divisibleThreeAndFive = [];
   int sumDivisible = 0;
-  int get getSumDivisible {
-    return sumDivisible;
-  }
-
-  set setSumDivisible(sum) {
-    sumDivisible = sum;
-  }
 
   void divisibleToList() {
     for (int i = 1; i < 1000; i++) {
