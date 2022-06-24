@@ -9,9 +9,10 @@ class Fibonacci {
   List<int> evenFib = [];
   List<int> oddFib = [];
   int FibSum = 0;
+
   int max = 0;
   set setMax(int x) => max = x;
-  int get getMax => max;
+
   //method that makes a list of Fibonacci numbers less than x
   void allFibLessThanX() {
     while ((allFib[index - 1] + allFib[index - 2]) < max) {
@@ -23,11 +24,7 @@ class Fibonacci {
   //method that makes a list of even and odd Fibonacci numbers included in the list allFib
   void makeOddAndEvenFib() {
     for (int i = 0; i < allFib.length; i++) {
-      if (allFib[i] % 2 == 0) {
-        evenFib.add(allFib[i]);
-      } else {
-        oddFib.add(allFib[i]);
-      }
+      (allFib[i] % 2 == 0) ? evenFib.add(allFib[i]) : oddFib.add(allFib[i]);
     }
   }
 
